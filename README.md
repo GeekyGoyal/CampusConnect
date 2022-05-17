@@ -12,3 +12,9 @@ companies visiting their colleges, the interview process, and the preparation st
 - Build Connections: Driven by like-minded interests, similar paths, and common goals.
 - Meaningful Conversations: Participate in existing conversations or engage others by starting new ones.
 - Safe Space: No Judgements, No trolls. Let’s just be ourselves and learn together.
+- Students can join their college communities.
+- Media like images, gifs, pdfs, and many more can be uploaded, shared, and downloaded to local storage.
+- Like, comment, delete (Only individual posts), and share functionality.
+- Can follow, or block anyone you want.
+- Used best search algorithm to search all over database within a seconds.
+- Anonymous posting and many more are to be implemented.
