@@ -20,9 +20,9 @@ companies visiting their colleges, the interview process, and the preparation st
 - Anonymous posting and many more are to be implemented.
 
 ## Technology Used
-Programming Language: Javascript (intermediate)
-Database used: MongoDB
-CSS framework: Bootstrap 4
-Libraries: ReactJS
-Framework: ExpressJS
+- Programming Language: Javascript (intermediate)
+- Database used: MongoDB
+- CSS framework: Bootstrap 4
+- Libraries: ReactJS
+- Framework: ExpressJS
 
