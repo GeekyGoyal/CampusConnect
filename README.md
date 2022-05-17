@@ -18,3 +18,11 @@ companies visiting their colleges, the interview process, and the preparation st
 - Can follow, or block anyone you want.
 - Used best search algorithm to search all over database within a seconds.
 - Anonymous posting and many more are to be implemented.
+
+## Technology Used
+Programming Language: Javascript (intermediate)
+Database used: MongoDB
+CSS framework: Bootstrap 4
+Libraries: ReactJS
+Framework: ExpressJS
+
