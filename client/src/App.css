@@ -1,4 +1,32 @@
 /* Global Styles */
+.btns {
+  margin: 10px 5px 0 3px;
+}
+.font-link {
+  font-size: 45px;
+  font-family: 'Pacifico', cursive;
+}
+
+.sec {
+  background-color: #85586f;
+}
+
+.title-font {
+    font-family: "Montserrat";
+    font-size: 4.25rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.landing-div {
+  margin-top: -90px;
+}
+
+.container-fluid {
+  text-align: left;
+  padding: 3% 15%;
+}
+
 :root {
   --primary-color: #17a2b8;
   --dark-color: #343a40;
@@ -22,7 +50,7 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -126,19 +154,6 @@ img {
   margin: 3rem 0;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--light-color);
-  color: #333;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  margin-right: 0.5rem;
-  transition: opacity 0.2s ease-in;
-  outline: none;
-}
-
 .badge {
   font-size: 0.8rem;
   padding: 0.1rem;
@@ -156,62 +171,8 @@ img {
   color: #333;
 }
 
-.btn-primary,
-.bg-primary,
-.badge-primary,
-.alert-primary {
-  background: var(--primary-color);
-  color: #fff;
-}
-
-.btn-light,
-.bg-light,
-.badge-light,
-.alert-light {
-  background: var(--light-color);
-  color: #333;
-}
-
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
-  background: var(--dark-color);
-  color: #fff;
-}
-
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
-  background: var(--danger-color);
-  color: #fff;
-}
-
-.btn-success,
-.bg-success,
-.badge-success,
-.alert-success {
-  background: var(--success-color);
-  color: #fff;
-}
-
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
-  background: #fff;
-  color: #333;
-  border: #ccc solid 1px;
-}
-
 .btn:hover {
   opacity: 0.8;
-}
-
-.bg-light,
-.badge-light {
-  border: #ccc solid 1px;
 }
 
 .round-img {
@@ -299,17 +260,14 @@ button {
 }
 
 /* Navbar */
+
+.nav-item {
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7rem 2rem;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-  border-bottom: solid 1px var(--primary-color);
-  opacity: 0.9;
+  padding: 3rem 8rem 2rem;
 }
 
 .navbar ul {
@@ -318,35 +276,29 @@ button {
 
 .navbar a {
   color: #fff;
-  padding: 0.45rem;
-  margin: 0 0.25rem;
+  padding: 5rem;
 }
 
 .navbar a:hover {
   color: var(--primary-color);
 }
 
-.navbar .welcome span {
-  margin-right: 0.6rem;
-}
-
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background-color: #85586f;
   height: 100vh;
 }
 
 .landing-inner {
   color: #fff;
   height: 100%;
-  width: 80%;
+  width: 100%;
+  text-align: left;
+  padding: 4% 15%;
   margin: auto;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: center; 
 }
 
 /* Profiles Page */
@@ -514,11 +466,11 @@ button {
   /* Navbar */
   .navbar {
     display: block;
-    text-align: center;
+    text-align: left;
   }
 
   .navbar ul {
-    text-align: center;
+    text-align: left;
     justify-content: center;
   }
 

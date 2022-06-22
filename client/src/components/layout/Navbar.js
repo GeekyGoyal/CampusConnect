@@ -4,17 +4,19 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logout } from "../../actions/auth";
 
-const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
+import { Navbar } from "react-bootstrap";
+
+const Navb = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
-    <ul>
-      <li>
+    <ul className="ms-auto">
+      <li className="nav-item">
         <Link to="/profiles">Developers</Link>
       </li>
 
-      <li>
+      <li className="nav-item">
         <Link to="/posts">Posts</Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link to="/dashboard">
           <i className="fas fa-user" />{" "}
           <span className="hide-sm">Dashboard</span>
@@ -30,30 +32,32 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   const guestLinks = (
-    <ul>
-      <li>
-        <Link to="/profiles">Developers</Link>
-      </li>
-      <li>
-        <Link to="/register">Register</Link>
-      </li>
-      <li>
-        <Link to="/login">Login</Link>
-      </li>
-    </ul>
+    <Navbar.Collapse className="justify-content-end">
+      <ul>
+        <li className="nav-item">
+          <Link to="/profiles">Developers</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/register">Register</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/login">Login</Link>
+        </li>
+      </ul>
+    </Navbar.Collapse>
   );
 
   return (
-    <nav className="navbar bg-dark">
-      <h1>
-        <Link to="/">
-          <i className="fas fa-code" /> Campus Connect
-        </Link>
-      </h1>
+    <Navbar className="sec" expand="lg">
+      <Navbar.Brand>
+        <h1 className="font-link">
+          <Link to="/">Campus Connect</Link>
+        </h1>
+      </Navbar.Brand>
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}
-    </nav>
+    </Navbar>
   );
 };
 
@@ -66,4 +70,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logout })(Navbar);
+export default connect(mapStateToProps, { logout })(Navb);
