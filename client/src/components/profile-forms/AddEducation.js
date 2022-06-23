@@ -36,7 +36,7 @@ const AddEducation = ({ addEducation, history }) => {
       <p class='lead'>
         <i class='fas fa-code-branch' /> Add any school / university
       </p>
-      <small>* = required field</small>
+      <small>*required fields</small>
       <form
         class='form'
         onSubmit={e => {

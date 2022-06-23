@@ -4,20 +4,34 @@
 }
 
 .formBody {
-  text-align: center!important;
+  text-align: center !important;
+}
+
+.addNet {
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .form-signin {
   max-width: 330px;
   padding: 15px;
 }
+.form-create {
+  max-width: 500px;
+}
 
 .m-auto {
-  margin: auto!important;
+  margin: auto !important;
 }
 
 .w-100 {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .form-floating {
@@ -43,8 +57,8 @@
 }
 
 .middle {
-    border-radius: 0;
-    margin-bottom: -1px;
+  border-radius: 0;
+  margin-bottom: -1px;
 }
 
 .form-signin .form-floating:focus-within {
@@ -53,7 +67,7 @@
 
 .font-link {
   font-size: 45px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .sec {
@@ -61,10 +75,10 @@
 }
 
 .title-font {
-    font-family: "Montserrat";
-    font-size: 4.25rem;
-    line-height: 1.5;
-    font-weight: 900;
+  font-family: "Montserrat";
+  font-size: 4.25rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 .title-image {
@@ -97,7 +111,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -261,10 +275,10 @@ img {
   color: #888;
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
 .form select,
 .form textarea {
   display: block;
@@ -274,7 +288,7 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type='submit'],
+.form input[type="submit"],
 button {
   font: inherit;
 }
@@ -353,7 +367,7 @@ button {
   padding: 4% 15%;
   margin: auto;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
 }
 
 /* Profiles Page */
@@ -371,10 +385,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
   grid-gap: 1rem;
 }
 
@@ -557,11 +571,11 @@ button {
 
   .profile-grid {
     grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
   }
 
   .profile-about .skills {

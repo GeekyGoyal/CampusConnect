@@ -29,7 +29,7 @@ const AddExperience = ({ addExperience, history }) => {
         <i class='fas fa-code-branch' /> Add any developer/programming positions
         that you have had in the past
       </p>
-      <small>* = required field</small>
+      <small>*required fields</small>
       <form
         class='form'
         onSubmit={e => {
