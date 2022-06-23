@@ -1,7 +1,56 @@
 /* Global Styles */
 .btns {
-  margin: 10px 5px 0 3px;
+  margin: 5% 3% 5% 0;
 }
+
+.formBody {
+  text-align: center!important;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.m-auto {
+  margin: auto!important;
+}
+
+.w-100 {
+  width: 100%!important;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating .form-control {
+  padding: 1rem 0.75rem;
+  height: calc(3.5rem + 2px);
+  line-height: 1.25;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
 .font-link {
   font-size: 45px;
   font-family: 'Pacifico', cursive;
@@ -16,6 +65,12 @@
     font-size: 4.25rem;
     line-height: 1.5;
     font-weight: 900;
+}
+
+.title-image {
+  width: 100%;
+  position: absolute;
+  margin-top: 20%;
 }
 
 .landing-div {
@@ -171,9 +226,9 @@ img {
   color: #333;
 }
 
-.btn:hover {
+/* .btn:hover {
   opacity: 0.8;
-}
+} */
 
 .round-img {
   border-radius: 50%;
@@ -280,7 +335,7 @@ button {
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  text-decoration: none;
 }
 
 /* Landing Page */

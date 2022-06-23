@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Button } from "react-bootstrap";
 
-import pick from './../../img/pick.gif';
+import pick from './../../img/pic.png';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
@@ -27,7 +27,7 @@ const Landing = ({ isAuthenticated }) => {
             </div>
           </div>
           <div class="col-lg-6 landing-div">
-          <img src={pick} alt="Logo" />
+          <img class="title-image" src={pick} alt="Logo" />
           </div>
         </div>
       </div>
