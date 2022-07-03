@@ -14,7 +14,7 @@ const Posts = ({getPosts, post: {posts, loading}}) => {
     
     return loading ? <Spinner /> : (
         <Fragment>
-            <h1 className="large text-primary">POSTS</h1>
+            <div className="formBody form-post w-100 m-auto">
             <p className="lead">
                 <i className="fas fa-user" /> Welcome to the community
             </p>
@@ -24,6 +24,7 @@ const Posts = ({getPosts, post: {posts, loading}}) => {
                 {posts.map(post => (
                     <PostItem key={post._id} post={post} />
                 ))}
+            </div>
             </div>
         </Fragment>
     )

@@ -17,27 +17,27 @@ const PostItem = ({addLike, removeLike, deletePosts, auth, post: {_id, text, nam
                 src={avatar}
                 alt=""
               />
-              <h4>{name}</h4>
             </Link>
+            <h4>{name}</h4>
           </div>
           <div>
-            <p class="my-1">
+            <p class="my-1 lead">
               {text}
             </p>
              <p class="post-date">
                 Posted on <Moment format="YYYY/MM/DD">{date}</Moment>
             </p>
             <button onClick={e => addLike(_id)} type="button" class="btn btn-light">
-              <i class="fas fa-thumbs-up"></i>{' '}
+              <i class="fas fa-2x fa-thumbs-up"></i>{' '}
               <span> {likes.length > 0 && (
                   <span>{likes.length}</span>
               )} 
             </span>
             </button>
             <button onClick={e => removeLike(_id)} type="button" class="btn btn-light">
-              <i class="fas fa-thumbs-down"></i>
+              <i class="fas fa-2x fa-thumbs-down"></i>
             </button>
-            <Link to={`/posts/${_id}`} class="btn btn-primary">
+            <Link to={`/posts/${_id}`} class="btn btns btn-primary btn-lg">
               Discussion{' '}
                {comments.length > 0 && (
                   <span className="comment-count">{comments.length}</span>
@@ -47,8 +47,8 @@ const PostItem = ({addLike, removeLike, deletePosts, auth, post: {_id, text, nam
             {!auth.loading && user === auth.user._id &&  (
             <button onClick={e => deletePosts(_id)}     
             type="button"
-            class="btn btn-danger">
-            <i class="fas fa-times"></i>
+            class="btn btns btn-outline-danger btn-lg">
+            Remove Post
           </button>
             )}
           </div>

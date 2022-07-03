@@ -8,7 +8,7 @@ import { Navbar } from "react-bootstrap";
 
 const Navb = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
-    <ul className="ms-auto">
+    <ul className="d-flex flex-row mb-3">
       <li className="nav-item">
         <Link to="/profiles">Developers</Link>
       </li>
@@ -17,23 +17,17 @@ const Navb = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Link to="/posts">Posts</Link>
       </li>
       <li className="nav-item">
-        <Link to="/dashboard">
-          <i className="fas fa-user" />{" "}
-          <span className="hide-sm">Dashboard</span>
-        </Link>
+        <Link to="/dashboard"> Dashboard </Link>
       </li>
-      <li>
-        <a onClick={logout} href="/">
-          <i className="fas fa-sign-out-alt" />{" "}
-          <span className="hide-sm">Logout</span>
-        </a>
+      <li className="nav-item">
+        <a onClick={logout} href="/"> Logout </a>
       </li>
     </ul>
   );
 
   const guestLinks = (
     <Navbar.Collapse className="justify-content-end">
-      <ul>
+      <ul className="d-flex flex-row mb-3"> 
         <li className="nav-item">
           <Link to="/profiles">Developers</Link>
         </li>

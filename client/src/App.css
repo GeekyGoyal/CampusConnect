@@ -22,8 +22,18 @@
   max-width: 330px;
   padding: 15px;
 }
+
+.form-editProfile {
+  max-width: 600px;
+  padding: 10px;
+}
+
 .form-create {
   max-width: 500px;
+}
+
+.form-post {
+  max-width: 650px;
 }
 
 .m-auto {
@@ -48,6 +58,10 @@
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.bottomPost {
+  margin-bottom: 50px;
 }
 
 .top {
@@ -331,7 +345,7 @@ button {
 /* Navbar */
 
 .nav-item {
-  padding: 0 10px;
+  width: 150px;
   font-size: 1.2rem;
 }
 
@@ -500,7 +514,7 @@ button {
   color: var(--primary-color);
   padding: 0.1rem 0.2rem;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .post .post-date {
@@ -540,7 +554,7 @@ button {
 
   .navbar ul {
     text-align: left;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .navbar h1 {
