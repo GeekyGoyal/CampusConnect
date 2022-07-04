@@ -1,7 +1,7 @@
 {
   "name": "campusconnect",
   "version": "1.0.0",
-  "description": "Social network for developers",
+  "description": "A MERN-based social networking web application that aims to connect peers within the college",
   "main": "server.js",
   "scripts": {
     "start": "node server",
