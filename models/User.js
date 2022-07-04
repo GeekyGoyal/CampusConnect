@@ -1,5 +1,13 @@
 const mongoose = require("mongoose");
 
+
+// Regular Expressions (Regex)
+// The position anchors ^  matches the beginning of the input string
+// \w+ matches 1 or more word characters (same as [a-zA-Z0-9_]+).
+// [.-]? matches an optional character . or -. 
+// ([.-]?\w+)* matches 0 or more occurrences of [.-]?\w+.
+//  The @ matches itself. 
+
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -15,7 +23,7 @@ const UserSchema = new mongoose.Schema({
     ],
   },
   password: {
-    type: String,
+    type: String, 
     required: true,
   },
   avatar: {

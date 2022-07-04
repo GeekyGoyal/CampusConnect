@@ -24,6 +24,7 @@ const Landing = ({ isAuthenticated }) => {
               <Button className="btns" variant="outline-light" size="lg">
                 <Link to="/login">Log In</Link>
               </Button>{" "}
+              
             </div>
           </div>
           <div class="col-lg-6 landing-div">

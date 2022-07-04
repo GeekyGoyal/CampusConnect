@@ -18,8 +18,8 @@ const CommentForm = ({ postId, addComment }) => {
       >
         <textarea
           name='text'
-          cols='30'
-          rows='5'
+          cols='22'
+          rows='4'
           placeholder='Comment'
           value={text}
           onChange={e => setText(e.target.value)}
