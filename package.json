@@ -4,7 +4,7 @@
   "description": "A MERN-based social networking web application that aims to connect peers within the college",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "nodemon server --ignore client",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
