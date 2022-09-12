@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://phantom:teamPhantom@cluster0.ihpfn.mongodb.net/database?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "01c9924e6563f64c9273",
+  "githubSecret": "407ab8d92ae8dad3ee59a9218e9740628ac43b33"
+}
